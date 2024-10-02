@@ -4,9 +4,9 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jp.co.kisarazu.j.fukuoka.zweichannel.logic.SessionManagementLogic;
-import jp.co.kisarazu.j.fukuoka.zweichannel.object.Session;
-import jp.co.kisarazu.j.fukuoka.zweichannel.struct.ConvertedToSeconds;
-import jp.co.kisarazu.j.fukuoka.zweichannel.struct.SessionStatus;
+import object.Session;
+import struct.ConvertedToSeconds;
+import struct.SessionStatus;
 
 import java.io.IOException;
 import java.util.Date;
