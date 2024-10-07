@@ -1,13 +1,15 @@
 package database.mysql.dto;
 
+import java.util.UUID;
+
 public class UserDTO {
-    private String userUID;
+    private UUID userUID;
     private String username;
     private String mailAddress;
     private String password;
     private String registration_date;
 
-    public UserDTO(String userUID, String username, String mailAddress, String password, String registration_date) {
+    public UserDTO(UUID userUID, String username, String mailAddress, String password, String registration_date) {
         this.userUID = userUID;
         this.username = username;
         this.mailAddress = mailAddress;
@@ -18,11 +20,11 @@ public class UserDTO {
     public UserDTO() {
     }
 
-    public String getUserUID() {
+    public UUID getUserUID() {
         return userUID;
     }
 
-    public void setUserUID(String userUID) {
+    public void setUserUID(UUID userUID) {
         this.userUID = userUID;
     }
 

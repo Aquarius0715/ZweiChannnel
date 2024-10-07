@@ -11,9 +11,9 @@ public class LoginPageLogicImpl implements LoginPageLogic {
     public boolean checkAuthenticate(LoginPageMdl mdl) throws NoSuchAlgorithmException {
         if (mdl == null) {
             System.err.println("LoginPageMdl is null");
-            BCryptPasswordEncoder bcpe = new BCryptPasswordEncoder();
             return false;
         }
+        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
         return false;
     }
 }
