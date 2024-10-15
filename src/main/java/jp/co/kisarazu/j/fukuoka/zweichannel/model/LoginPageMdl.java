@@ -4,10 +4,17 @@ import java.io.Serializable;
 
 public class LoginPageMdl implements Serializable {
     private String username;
+    private String mailAddress;
     private String password;
     public LoginPageMdl() {}
-    public LoginPageMdl(String username, String password) {
+    public LoginPageMdl(String username, String mailAddress, String password) {
         this.username = username;
+        this.mailAddress = mailAddress;
+        this.password = password;
+    }
+
+    public LoginPageMdl(String mailAddress, String password) {
+        this.mailAddress = mailAddress;
         this.password = password;
     }
 
@@ -17,6 +24,14 @@ public class LoginPageMdl implements Serializable {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getMailAddress() {
+        return mailAddress;
+    }
+
+    public void setMailAddress(String mailAddress) {
+        this.mailAddress = mailAddress;
     }
 
     public String getPassword() {

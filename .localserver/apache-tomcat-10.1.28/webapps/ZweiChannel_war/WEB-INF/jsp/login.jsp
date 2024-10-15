@@ -9,7 +9,49 @@
 <html>
 <head>
     <title>生徒登録</title>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/header.css">
+    <%--<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/header.css">
+    --%>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+
     <header>
         <h1>&nbsp;CitronKidsManager</h1>
         <text>&emsp;ver 1.0.0-SNAPSHOT</text>

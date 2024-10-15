@@ -21,9 +21,8 @@ public class LoginPageFacadeImpl extends HttpServlet implements LoginPageFacade,
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String username = request.getParameter("user");
+        String mailAddress = request.getParameter("id");
         String password = request.getParameter("pass");
-        LoginPageMdl mdl = new LoginPageMdl(username, password);
+        LoginPageMdl mdl = new LoginPageMdl(mailAddress, password);
     }
-
 }

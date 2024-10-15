@@ -12,4 +12,5 @@ public interface MySQLManager {
     boolean execute(String query);
     ResultSet query(String query);
     void close();
+    String escapeString(String str);
 }
